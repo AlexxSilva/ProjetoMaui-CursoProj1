@@ -2,13 +2,40 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppNumeroDaSorte.MainPage">
-    <VerticalStackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-        <Image Source="logo_green.png" WidthRequest="74" HeightRequest="115"></Image>
-        <Label Margin="0,20,0,120"
+    <ScrollView>
+        <VerticalStackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Image Source="logo_green.png" WidthRequest="74" HeightRequest="115"></Image>
+            <Label 
+            IsVisible="false"
+            Margin="0,20,0,120"
             Text="Número da Sorte"
             TextColor="#00ab37"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-        <Button Text="Gerar numero da sorte" HorizontalOptions="Center"></Button>
-    </VerticalStackLayout>
+            <Label Text="O numero da sorte é:" HorizontalOptions="Center" Margin="0,20,0,0"></Label>
+            <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" Margin="0,70">
+                <Border Stroke="#00ab37" Padding="10,5" StrokeShape="RoundRectangle 8,8,8,8">
+                    <Label FontSize="24" Text="01"  TextColor="#00ab37"/>
+                </Border>
+                <Border Stroke="#00ab37" Padding="10,5" StrokeShape="RoundRectangle 8,8,8,8">
+                    <Label FontSize="24" Text="02"  TextColor="#00ab37"/>
+                </Border>
+                <Border Stroke="#00ab37" Padding="10,5" StrokeShape="RoundRectangle 8,8,8,8">
+                    <Label FontSize="24" Text="03"  TextColor="#00ab37"/>
+                </Border>
+                <Border Stroke="#00ab37" Padding="10,5" StrokeShape="RoundRectangle 8,8,8,8">
+                    <Label FontSize="24" Text="04"  TextColor="#00ab37"/>
+                </Border>
+                <Border Stroke="#00ab37" Padding="10,5" StrokeShape="RoundRectangle 8,8,8,8">
+                    <Label FontSize="24" Text="05"  TextColor="#00ab37"/>
+                </Border>
+                <Border Stroke="#00ab37" Padding="10,5" StrokeShape="RoundRectangle 8,8,8,8">
+                    <Label FontSize="24" Text="06"  TextColor="#00ab37"/>
+                </Border>
+            </HorizontalStackLayout>
+            <Label Text="06"/>
+            <Label Text="Boa sorte!" HorizontalOptions="Center" Margin="0,0,0,50"></Label>
+            <Button Text="Gerar numero da sorte" HorizontalOptions="Center"></Button>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
