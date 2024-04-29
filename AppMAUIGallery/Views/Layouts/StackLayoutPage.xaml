@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMAUIGallery.Views.Layouts.StackLayoutPage"
+             Title="StackLayoutPage">
+    <StackLayout Padding="20" BackgroundColor="AliceBlue" Margin="20" Orientation="Vertical" Spacing="10">
+        <Label Text="Olá Mundo"></Label>
+        <StackLayout Spacing="10" Orientation="Horizontal" >
+            <Button Text="Olá Mundo 1" HorizontalOptions="Start"></Button>
+            <Button Text="Olá Mundo 2" HorizontalOptions="Start"></Button>
+        </StackLayout>
+
+        <VerticalStackLayout BackgroundColor="Aquamarine" Spacing="10" Padding="10">
+            <Label Text="Olá Mundo 1"></Label>
+            <Label Text="Olá Mundo 2"></Label>
+        </VerticalStackLayout>
+        <HorizontalStackLayout BackgroundColor="Aquamarine" Spacing="10" Padding="10">
+            <Label Text="Olá Mundo 1"></Label>
+            <Label Text="Olá Mundo 2"></Label>
+        </HorizontalStackLayout>
+        
+        <Button Text="Olá Mundo" WidthRequest="200" HeightRequest="100" HorizontalOptions="Center"></Button>
+    </StackLayout>
+</ContentPage>

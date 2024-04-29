@@ -7,7 +7,7 @@
     <VerticalStackLayout>
         <Label
             HorizontalOptions="Center"
-            Text="Conteudo da pagina inicial"
+            Text="Conteudo da pagina inicial (Main Page)"
             VerticalOptions="Center" />
     </VerticalStackLayout>
 </ContentPage>
