@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AppMAUIGallery.Views.Components.Mains.ImagePage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="ImagePage">
+    <VerticalStackLayout>
+        <Image
+            x:Name="Imagem01"
+            Aspect="AspectFit"
+            HeightRequest="200"
+            IsOpaque="True"
+            Source="https://tm.ibxk.com.br/2017/07/13/13160112901226.jpg"
+            WidthRequest="200" />
+        <Image
+            Aspect="AspectFit"
+            HeightRequest="400"
+            IsAnimationPlaying="True"
+            IsOpaque="True"
+            Source="https://i.pinimg.com/originals/57/61/5b/57615b8c0092a66c1d4058b1692955cc.gif"
+            WidthRequest="300" />
+    </VerticalStackLayout>
+</ContentPage>
