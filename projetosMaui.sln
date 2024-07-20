@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppFlyoutPage", "AppFlyoutP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppTabbedPage", "AppTabbedPage\AppTabbedPage.csproj", "{10BA47EC-4026-458A-9B4C-D05E9B0BAEF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppMAUIGallery", "AppMAUIGallery\AppMAUIGallery.csproj", "{867DEAE7-B557-4A1A-B975-EA8DB81CA4E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMAUIGallery", "AppMAUIGallery\AppMAUIGallery.csproj", "{867DEAE7-B557-4A1A-B975-EA8DB81CA4E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppMVVM", "AppMVVM\AppMVVM.csproj", "{D2EB0335-8384-4FAD-BF32-6C38BD5D3B75}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,12 @@ Global
 		{867DEAE7-B557-4A1A-B975-EA8DB81CA4E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{867DEAE7-B557-4A1A-B975-EA8DB81CA4E5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{867DEAE7-B557-4A1A-B975-EA8DB81CA4E5}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{D2EB0335-8384-4FAD-BF32-6C38BD5D3B75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2EB0335-8384-4FAD-BF32-6C38BD5D3B75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2EB0335-8384-4FAD-BF32-6C38BD5D3B75}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D2EB0335-8384-4FAD-BF32-6C38BD5D3B75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2EB0335-8384-4FAD-BF32-6C38BD5D3B75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2EB0335-8384-4FAD-BF32-6C38BD5D3B75}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

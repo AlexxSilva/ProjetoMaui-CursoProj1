@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AppMAUIGallery.Views.Components.Forms.RadioButtonPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="RadioButtonPage">
+    <VerticalStackLayout>
+        <StackLayout>
+            <Label
+                HorizontalOptions="Start"
+                Text="Qual linguagem de programação você mais gosta?"
+                VerticalOptions="Center" />
+            <RadioButton CheckedChanged="RadioButton_CheckedChanged" Content="C#" />
+            <RadioButton CheckedChanged="RadioButton_CheckedChanged" Content="Java Script" />
+            <RadioButton CheckedChanged="RadioButton_CheckedChanged" Content="Java" />
+            <Label x:Name="LblResultAsk01" />
+        </StackLayout>
+        <StackLayout RadioButtonGroup.GroupName="ask02">
+            <Label
+                HorizontalOptions="Start"
+                Text="Qual linguagem de programação você menos gosta?"
+                VerticalOptions="Center" />
+            <RadioButton IsChecked="True" Value="C#" />
+            <RadioButton Value="Java Script" />
+            <RadioButton
+                BorderColor="Blue"
+                BorderWidth="1"
+                CornerRadius="1"
+                Value="Java" />
+        </StackLayout>
+        <StackLayout RadioButtonGroup.GroupName="ask03">
+            <Label
+                HorizontalOptions="Start"
+                Text="qual é o mascote do dot net maui?"
+                VerticalOptions="Center" />
+            <RadioButton Value="C#">
+                <RadioButton.Content>
+                    <HorizontalStackLayout>
+                        <Label Text="C#" />
+                        <Image HeightRequest="30" Source="dotnet_bot.png" />
+                    </HorizontalStackLayout>
+                </RadioButton.Content>
+            </RadioButton>
+            <RadioButton Content="Java Script" />
+            <RadioButton Content="Java" />
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>

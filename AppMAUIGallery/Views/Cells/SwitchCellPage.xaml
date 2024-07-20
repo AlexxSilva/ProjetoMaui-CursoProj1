@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMAUIGallery.Views.Cells.SwitchCellPage"
+             Title="SwitchCellPage">
+    <VerticalStackLayout>
+        <TableView>
+            <TableSection Title="Lista de colaboradores">
+                <SwitchCell Text="Backup diario" />
+            </TableSection>
+        </TableView>
+    </VerticalStackLayout>
+</ContentPage>
