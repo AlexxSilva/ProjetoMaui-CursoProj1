@@ -183,6 +183,10 @@ namespace AppMAUIGallery.Repositories
                     Description = "Apresenta Celulas em linhas separadas e permite agrupar por seção",
                     Page = typeof(TableViewPage)
                     },
+                     new Component { Title = "Picker",
+                    Description = "Apresenta Uma lista de seleção unica",
+                    Page = typeof(PickerListPage)
+                    },
                 }
             });
 
