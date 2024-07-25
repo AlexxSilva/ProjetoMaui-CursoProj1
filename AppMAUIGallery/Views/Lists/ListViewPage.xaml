@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AppMAUIGallery.Views.Lists.ListViewPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="ListViewPage">
+
+    <!--RowHeight="170"-->
+    <ListView
+        x:Name="ListViewControl"
+        ItemSelected="ListViewControl_ItemSelected"
+        SelectionMode="Single"
+        HasUnevenRows="True"
+        SeparatorVisibility="Default"
+        SeparatorColor="Blue"
+        IsPullToRefreshEnabled="True"
+        Refreshing="ListViewControl_Refreshing"
+        IsGroupingEnabled="True"
+        >
+        <ListView.Header>
+            <Button Clicked="Button_Clicked" Text="Carregar" />
+        </ListView.Header>
+        <ListView.GroupHeaderTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <VerticalStackLayout Padding="10" BackgroundColor="Purple"  >
+                        <Label Text="{Binding CompanyName}" Margin="10" FontAttributes="Bold" TextColor="White"></Label>
+                    </VerticalStackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.GroupHeaderTemplate>
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <VerticalStackLayout>
+                        <Label
+                            FontAttributes="Bold"
+                            FontSize="18"
+                            Text="{Binding Name}" />
+                        <Label Text="{Binding Description}" TextColor="Gray" />
+                        <HorizontalStackLayout>
+                            <Label Margin="10" Text="{Binding LaunchYear}" />
+                            <Label Margin="10" Text="{Binding Duration}" />
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+
+</ContentPage>

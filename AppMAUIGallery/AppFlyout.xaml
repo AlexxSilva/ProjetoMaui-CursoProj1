@@ -4,6 +4,7 @@
              xmlns:pages="clr-namespace:AppMAUIGallery.Views"
              x:Class="AppMAUIGallery.AppFlyout"
              Title="AppFlyout"
+            IsPresentedChanged="FlyoutPage_IsPresentedChanged"
              FlyoutLayoutBehavior="Popover">
     <FlyoutPage.Flyout>
         <pages:Menu/>
