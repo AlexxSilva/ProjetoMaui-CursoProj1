@@ -120,7 +120,8 @@ public partial class AddEditTaskPage : ContentPage
         _task.PrevisionDate = _task.PrevisionDate.AddMinutes(59);
         _task.PrevisionDate = _task.PrevisionDate.AddSeconds(59);
         _task.Created = DateTime.Now;
-        _task.isCompleted = false;
+        if (_task.Id == 0)
+            _task.isCompleted = false;
         
     }
 
