@@ -1,13 +1,28 @@
-﻿<?xml version = "1.0" encoding = "UTF-8" ?>
-<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:AppMAUIGallery"
-             x:Class="AppMAUIGallery.App">
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Application
+    x:Class="AppMAUIGallery.App"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:AppMAUIGallery">
     <Application.Resources>
         <ResourceDictionary>
+            <!--<Style TargetType="Label">
+            -->
+            <!--<Setter Property="FontSize" Value="14"></Setter>-->
+            <!--
+        </Style>-->
+            <!--<Style TargetType="ContentPage" ApplyToDerivedTypes="True">
+                <Setter Property="BackgroundColor" Value="Red"></Setter>
+            </Style>--> 
+            <Style x:Key="Title" TargetType="Label">
+                <Setter Property="FontSize" Value="32" />
+                <Setter Property="TextColor" Value="Red" />
+                <Setter Property="FontAttributes" Value="Bold" />
+            </Style>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+                <ResourceDictionary Source="Resources/Styles/LightTheme.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

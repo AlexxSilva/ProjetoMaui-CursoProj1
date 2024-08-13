@@ -79,6 +79,18 @@ public partial class CollectionViewPage : ContentPage
     private void CollectionViewControl_Scrolled(object sender, ItemsViewScrolledEventArgs e)
     {
 		LblScrollStatus.Text = $"Posicionamento: {e.VerticalOffset} - {e.VerticalDelta}";
+		if (DeviceInfo.Platform != DevicePlatform.WinUI)
+			return;
+		if (sender is CollectionView cv)
+		{
+			var LastVisibleItem = e.LastVisibleItemIndex;
+			var RemaingItemsThereshold = cv.RemainingItemsThreshold;
+			var TotalItem = ((IEnumerable<object>)cv.ItemsSource).Count();//20 - 40 - 60
 
+			if (LastVisibleItem > (TotalItem - RemaingItemsThereshold))
+			{
+				AddTenMovies();
+            }
+		}
 	}
 }

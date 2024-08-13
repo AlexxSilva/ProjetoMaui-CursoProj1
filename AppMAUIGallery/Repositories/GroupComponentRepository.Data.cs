@@ -1,4 +1,5 @@
 ﻿using AppMAUIGallery.Models;
+using AppMAUIGallery.Views.Animations;
 using AppMAUIGallery.Views.Cells;
 using AppMAUIGallery.Views.Components.Forms;
 using AppMAUIGallery.Views.Components.Mains;
@@ -6,11 +7,13 @@ using AppMAUIGallery.Views.Components.Visuals;
 using AppMAUIGallery.Views.Layouts;
 using AppMAUIGallery.Views.Lists;
 using AppMAUIGallery.Views.Lists.Models;
+using AppMAUIGallery.Views.Styles;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace AppMAUIGallery.Repositories
 {
@@ -320,76 +323,128 @@ namespace AppMAUIGallery.Repositories
         }
         private void LoadStyles()
         {
-            //var components = new List<Component> {
-            //    new Component {
-            //        Title = "Implicit & Explicit Styles",
-            //        Description = "Explicar como funciona os estilos.",
-            //        Page = typeof(ImplicitExplicitStyles)
-            //    },
-            //    new Component {
-            //        Title = "Global Style",
-            //        Description = "Como criar estilos para todo o seu projeto.",
-            //        Page = typeof(GlobalStyle)
-            //    },
-            //    new Component {
-            //        Title = "ApplyToDerivedTypes",
-            //        Description = "Aplicar um estilo aos elementos derividos da classe/component atual.",
-            //        Page = typeof(ApplyDerivedTypes)
-            //    },
-            //    new Component {
-            //        Title = "Inheritance Style",
-            //        Description = "Como criar estilos derivados de outros.",
-            //        Page = typeof(InheirtanceStyle)
-            //    },
-            //    new Component {
-            //        Title = "Style Class",
-            //        Description = "Cria classes de estilos para serem aplicado aos componentes",
-            //        Page = typeof(StyleClassPage)
-            //    },
-            //    new Component {
-            //        Title = "StaticResource/DynamicResource",
-            //        Description = "Define se o estilo pode ser alterado em tempo real.",
-            //        Page = typeof(StaticDynamicResource)
-            //    },
-            //    new Component {
-            //        Title = "Theme",
-            //        Description = "Define um tema padrão para o nosso projeto.",
-            //        Page = typeof(Theme)
-            //    },
-            //    new Component {
-            //        Title = "AppThemeBinding",
-            //        Description = "Adapta o tema ao modo claro/escuro do Sistema Operacional.",
-            //        Page = typeof(AppThemeBindingPage)
-            //    },
-            //    new Component {
-            //        Title = "Visual State Manager (VSM)",
-            //        Description = "Personaliza a apresentação de acordo com o estado do componente.",
-            //        Page = typeof(VisualStateManagerPage)
-            //    },
-            //};
+            var components = new List<Component> {
+                new Component {
+                     Title = "Implicit & Explicit Styles",
+                    Description = "Explicar como funciona os estilos.",
+                    Page = typeof(ImplicitiExplicitiStyles)
+                },
+                new Component {
+                    Title = "Global Style",
+                    Description = "Como criar estilos para todo o seu projeto.",
+                    Page = typeof(GlobalStyle)
+                },
+                 new Component {
+                    Title = "ApplyToDerivedTypes",
+                    Description = "Aplicar um estilo aos elementos derividos da classe/component atual.",
+                    Page = typeof(ApplyDerivedTypes)
+                },  new Component {
+                    Title = "Inheritance Style",
+                    Description = "Como criar estilos derivados de outros.",
+                    Page = typeof(InheirtanceStyle)
+                },  new Component {
+                    Title = "Style Class",
+                    Description = "Cria classes de estilos para serem aplicado aos componentes",
+                    Page = typeof(StyleClassPage)
+                },
+                   new Component {
+                    Title = "StaticResource/DynamicResource",
+                    Description = "Define se o estilo pode ser alterado em tempo real.",
+                    Page = typeof(StaticDynamicResource)
+                },  new Component {
+                    Title = "Theme",
+                    Description = "Define um tema padrão para o nosso projeto.",
+                    Page = typeof(Theme)
+                }, new Component {
+                    Title = "AppThemeBinding",
+                    Description = "Adapta o tema ao modo claro/escuro do Sistema Operacional.",
+                    Page = typeof(AppThemeBindingPage)
+                },  new Component {
+                    Title = "Visual State Manager (VSM)",
+                    Description = "Personaliza a apresentação de acordo com o estado do componente.",
+                    Page = typeof(VisualStateManagerPage)
+                },
+            };
 
-            //var group = new GroupComponent() { Name = "Styles" };
-            //group.AddRange(components);
+            var group = new GroupComponent() { Name = "Styles" };
+            group.AddRange(components);
 
-            //_components.AddRange(components);
-            //_groupComponents.Add(group);
+            _components.AddRange(components);
+            _groupComponents.Add(group);
         }
+
+        //private void LoadStyles()
+        //{
+        //    var components = new List<Component> {
+        //        new Component {
+        //            Title = "Implicit & Explicit Styles",
+        //            Description = "Explicar como funciona os estilos.",
+        //            Page = typeof(ImplicitExplicitStyles)
+        //        },
+        //        new Component {
+        //            Title = "Global Style",
+        //            Description = "Como criar estilos para todo o seu projeto.",
+        //            Page = typeof(GlobalStyle)
+        //        },
+        //        new Component {
+        //            Title = "ApplyToDerivedTypes",
+        //            Description = "Aplicar um estilo aos elementos derividos da classe/component atual.",
+        //            Page = typeof(ApplyDerivedTypes)
+        //        },
+        //        new Component {
+        //            Title = "Inheritance Style",
+        //            Description = "Como criar estilos derivados de outros.",
+        //            Page = typeof(InheirtanceStyle)
+        //        },
+        //        new Component {
+        //            Title = "Style Class",
+        //            Description = "Cria classes de estilos para serem aplicado aos componentes",
+        //            Page = typeof(StyleClassPage)
+        //        },
+        //        new Component {
+        //            Title = "StaticResource/DynamicResource",
+        //            Description = "Define se o estilo pode ser alterado em tempo real.",
+        //            Page = typeof(StaticDynamicResource)
+        //        },
+        //        new Component {
+        //            Title = "Theme",
+        //            Description = "Define um tema padrão para o nosso projeto.",
+        //            Page = typeof(Theme)
+        //        },
+        //        new Component {
+        //            Title = "AppThemeBinding",
+        //            Description = "Adapta o tema ao modo claro/escuro do Sistema Operacional.",
+        //            Page = typeof(AppThemeBindingPage)
+        //        },
+        //        new Component {
+        //            Title = "Visual State Manager (VSM)",
+        //            Description = "Personaliza a apresentação de acordo com o estado do componente.",
+        //            Page = typeof(VisualStateManagerPage)
+        //        },
+        //    };
+
+        //    var group = new GroupComponent() { Name = "Styles" };
+        //    group.AddRange(components);
+
+        //    _components.AddRange(components);
+        //    _groupComponents.Add(group);
+        //}
 
         private void LoadAnimations()
         {
-            //var components = new List<Component> {
-            //    new Component {
-            //        Title = "Basic Animation",
-            //        Description = "Animação básica do .NET MAUI.",
-            //        Page = typeof(BasicAnimation)
-            //    },
-            //};
+            var components = new List<Component> {
+                new Component {
+                    Title = "Basic Animation",
+                    Description = "Animação básica do .NET MAUI.",
+                    Page = typeof(BasicAnimation)
+                },
+            };
 
-            //var group = new GroupComponent() { Name = "Animation" };
-            //group.AddRange(components);
+            var group = new GroupComponent() { Name = "Animation" };
+            group.AddRange(components);
 
-            //_components.AddRange(components);
-            //_groupComponents.Add(group);
+            _components.AddRange(components);
+            _groupComponents.Add(group);
         }
         private void LoadUtils()
         {
